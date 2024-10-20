@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/project/src/css-(styles)/style.css">
+    <script src="/project/src/js-(javascript)/app.js" defer></script>
     <title>My-Website</title>
 </head>
+
 <body>
     <header>
         <nav class="list">
@@ -51,27 +54,77 @@
         <div class="catalog-container">
 
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 1">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 1">
                 <h3>Lorem.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
+                <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 2">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 2">
                 <h3>Lorem.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
+                <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 3">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 3">
                 <h3>Lorem.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
+                <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 4">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 4">
                 <h3>Lorem.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
+                <p class="myP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae.</p>
             </div>
         </div>
     </section>
-    <script src="/project/src/js-(javascript)/app.js"></script>
+    <div id="plitka">
+        <section>
+            <ul class="ul-one">
+                <li>
+                    <img src="https://th.bing.com/th/id/OIP.FA2WwxBfcSjhLZAJjQ5hhwHaEo?rs=1&pid=ImgDetMain" alt="">
+                </li>
+            </ul>
+            <ul class="ul2">
+                <li>
+                    <h1>Lorem,</h1>
+                    <p class="li-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore.</p>
+                    <button class="btn">
+                        Lorem.</button>
+                    <p></p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div id="elektrik-conteiner">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque veniam sint velit repudiandae quos minus
+            vel? Qui voluptate sapiente harum ut dolore in, deleniti earum? Obcaecati veritatis sunt voluptatem eius
+            blanditiis inventore, labore quisquam officia dolorem iure error commodi iusto delectus nemo. Corrupti
+            mollitia dolor animi quos excepturi delectus perspiciatis debitis doloribus officia. Similique hic dolorum
+            doloremque ipsam eos non?</h3>
+        <div class="electrik">
+            <h1>Lorem.</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <img class="myImg" src="https://th.bing.com/th/id/OIP.FA2WwxBfcSjhLZAJjQ5hhwHaEo?rs=1&pid=ImgDetMain" alt="">
+        </div>
+    </div>
+    <section id="myQuestion">
+        <div class="qa">
+            <div class="question" onclick="toggleAnswer(1)">Lorem, ipsum dolor?</div>
+            <div class="answer" id="answer1">
+                Lorem ipsum dolor sit amet?
+            </div>
+    
+            <div class="question" onclick="toggleAnswer(2)">Lorem, ipsum dolor?</div>
+            <div class="answer" id="answer2">Lorem ipsum dolor sit amet?
+            </div>
+    
+            <div class="question" onclick="toggleAnswer(3)">Lorem, ipsum dolor?</div>
+            <div class="answer" id="answer3">Lorem ipsum dolor sit amet?
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

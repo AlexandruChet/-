@@ -9,3 +9,16 @@ btnBlock.onclick = function () {
 		text.textContent = '';
 	}
 }
+
+let img = document.getElementsByClassName("myImg")
+img.alt = "Якщо ви ще захочите зайти і купити чудові картини то пропоную залишитись на цьому сайті"
+
+function toggleAnswer(questionNumber) {
+	const answer = document.getElementById(`answer${questionNumber}`)
+	if (answer.style.display === "none" || answer.style.display === "") {
+		answer.style.display = "block"
+	}
+	else {
+		answer.style.display = "none"
+	}
+}

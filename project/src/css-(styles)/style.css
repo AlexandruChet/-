@@ -3,7 +3,7 @@
 header {
   width: 100%;
   background-color: rgba(212, 194, 160, 0.712);
-  height: 200px;
+  height: 150px;
 }
 header nav {
   margin-left: 5%;
@@ -81,7 +81,7 @@ header nav ul li:hover {
 #gallery p:hover {
   font-size: 30px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -164,17 +164,272 @@ header nav ul li:hover {
 }
 .catalog-section .catalog-container .catalog-item img {
   width: 100%;
-  height: auto;
+  height: 50%;
   border: 3px solid #e0e0e0;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 .catalog-section .catalog-container .catalog-item h3 {
-  font-size: 1.2em;
-  color: #333;
-  margin-bottom: 10px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #f6d8d5;
+  background-image: radial-gradient(#f6d8d5);
+  font-size: 50px;
 }
-.catalog-section .catalog-container .catalog-item p {
-  font-size: 0.9em;
-  color: #666;
-  line-height: 1.5;
+.catalog-section .catalog-container .catalog-item .myP {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  background: repeating-radial-gradient(#000 0 0.0001%, #fff 0 0.0002%) 50% 0/2500px 2500px, repeating-conic-gradient(#000 0 0.0001%, #fff 0 0.0002%) 50% 50%/2500px 2500px;
+  background-blend-mode: difference;
+  mix-blend-mode: lighten;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#plitka {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: linear-gradient(70deg, rgb(255, 255, 255), rgb(0, 0, 0)) no-repeat center/cover;
+  width: 100%;
+}
+#plitka section {
+  display: flex;
+}
+#plitka section .ul-one li img {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-left: 15%;
+  width: 100%;
+  height: 500px;
+  border-radius: 100px;
+}
+#plitka section .ul2 li {
+  border-radius: 200px;
+  padding: 50px;
+  background: linear-gradient(70deg, rgb(255, 243, 243), rgb(178, 166, 166)) no-repeat center/cover;
+  margin-top: 100px;
+  margin-left: 20%;
+}
+#plitka section .ul2 li h1 {
+  margin-left: 25%;
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #000000;
+  font-size: 50px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#plitka section .ul2 li h1:hover {
+  border-radius: 50px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #000000;
+}
+#plitka section .ul2 li .li-p {
+  margin-top: 5%;
+  border-radius: 100px;
+  font-size: 25px;
+  background-color: #000000;
+  padding: 30px;
+  color: #fff;
+  transition: 0.5s;
+}
+#plitka section .ul2 li .li-p:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
+}
+#plitka section .ul2 li .btn {
+  margin-left: 20%;
+  margin-top: 10%;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  font-family: sans-serif;
+}
+#plitka section .ul2 li .btn:after, #plitka section .ul2 li .btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+#plitka section .ul2 li .btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+#plitka section .ul2 li .btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+#plitka section .ul2 li .btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#plitka section .ul2 li .btn:hover:before, #plitka section .ul2 li .btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+#elektrik-conteiner {
+  height: 900px;
+  background-color: #434646;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#elektrik-conteiner h3 {
+  font-family: "Italiana";
+  padding-top: 200px;
+  text-decoration: underline overline;
+  width: 30%;
+  font-size: 30px;
+  margin-left: 65%;
+  position: absolute;
+  color: #e0e0e0;
+}
+#elektrik-conteiner .electrik {
+  margin-left: 10%;
+  border-radius: 70px;
+  position: absolute;
+  margin-top: 10%;
+  padding: 70px;
+  width: 50%;
+  transition: 0.5s;
+  background: linear-gradient(70deg, rgb(255, 255, 255), rgb(178, 166, 166)) no-repeat center/cover;
+}
+#elektrik-conteiner .electrik img {
+  margin-left: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  height: 300px;
+  transition: 3s;
+}
+#elektrik-conteiner .electrik p {
+  font-family: serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(135deg, #2c2a2a 0%, #b5a2a2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#elektrik-conteiner .electrik h1 {
+  font-family: serif;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#elektrik-conteiner .electrik h1:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#elektrik-conteiner .electrik:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#myQuestion {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #434370;
+}
+
+.qa {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+.question {
+  background-color: #1e1e2e;
+  color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.4s, color 0.4s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.question:hover {
+  background-color: #282a36;
+  color: #50fa7b;
+  box-shadow: 0 4px 25px rgba(80, 250, 123, 0.5);
+  transform: scale(1.05);
+}
+
+.question::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(80, 250, 123, 0.5), transparent);
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.question:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(80, 250, 123, 0.5);
+  border-radius: 50%;
+  transition: width 0.6s ease-in-out, height 0.6s ease-in-out, top 0.6s ease-in-out, left 0.6s ease-in-out;
+  z-index: -1;
+}
+
+.question:hover::after {
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+}
+
+.answer {
+  background-color: #f8f8f8;
+  color: #000000;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: opacity 0.6s, transform 0.6s;
 }/*# sourceMappingURL=style.css.map */
