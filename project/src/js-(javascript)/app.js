@@ -22,3 +22,11 @@ function toggleAnswer(questionNumber) {
 		answer.style.display = "none"
 	}
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("modalOverlay").style.display = 'block';
+});
+
+function closeModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+}
