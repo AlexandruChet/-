@@ -9,33 +9,30 @@ header {
   background-color: rgba(212, 194, 160, 0.712);
   height: 170px;
 }
-header nav {
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-menu .burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+nav {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 1%;
 }
-header nav ul {
+nav ul {
   display: flex;
   gap: 25%;
 }
-header nav ul .li1 {
-  margin-top: 30px;
-  list-style-type: none;
-  font-size: 30px;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 5px;
-}
-header nav ul .li1 img {
-  width: 100px;
-  border-radius: 50px;
-  height: 100px;
-  transition: all 0.5s;
-}
-header nav ul .li1 img:hover {
-  transform: scale(1.5) rotate(360deg);
-}
-header nav ul li {
+nav li {
   margin-top: 30px;
   list-style-type: none;
   font-size: 30px;
@@ -45,21 +42,30 @@ header nav ul li {
   letter-spacing: 5px;
   transition: all 1s;
 }
-header nav ul .li2:hover {
+nav li:hover {
   color: black;
   background-color: #fff;
   border-radius: 100px;
   box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
-  transform: scale(1.1);
+  transform: scale(0.8);
   padding: 30px;
 }
-header nav ul .li3:hover {
-  color: black;
-  background-color: #fff;
-  border-radius: 100px;
-  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
-  transform: scale(1.1);
-  padding: 30px;
+nav .li1 {
+  margin-top: 30px;
+  list-style-type: none;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+nav .li1 img {
+  width: 100px;
+  border-radius: 50px;
+  height: 100px;
+  transition: all 0.5s;
+}
+nav .li1 img:hover {
+  transform: scale(1.5) rotate(720deg);
 }
 
 #gallery {
@@ -557,9 +563,28 @@ footer {
   width: 100%;
   background-color: #333;
   color: white;
-  text-align: center;
   padding: 10px;
   z-index: 1000;
+}
+footer a {
+  height: 100px;
+  margin-left: 30%;
+  position: absolute;
+  width: 100px;
+}
+footer h3 {
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-left: 10%;
+}
+footer p {
+  border-radius: 30px;
+  font-family: "Roboto";
+  color: #4b3f3f;
+  background-color: #fff;
+  width: 8%;
+  font-size: 20px;
+  margin-left: 10%;
 }
 
 #art-box {
@@ -674,5 +699,101 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav li {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  #art-box {
+    padding-top: 5%;
+    padding-bottom: 15%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #art-box img {
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-left: 0;
+    height: 250px;
+    width: 250px;
+  }
+  .art-description {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 90%;
+    padding: 20px;
+  }
+  .art-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .art-description p {
+    font-size: 14px;
+  }
+  .art-description p:hover {
+    font-size: 16px;
+  }
+  .art-description .learn-more {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+  .art-description::before,
+  .art-description::after {
+    width: 80px;
+    height: 80px;
+  }
+  .art-description:hover::before,
+  .art-description:hover::after {
+    transform: scale(1.05);
+  }
+  #elektrik-conteiner {
+    height: 800px;
+    background-color: #434646;
+    padding: 20px;
+  }
+  .electrik {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 30px;
+    width: 90%;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(70deg, rgb(255, 255, 255), rgb(178, 166, 166)) no-repeat center/cover;
+    transition: 0.5s;
+  }
+  .electrik img {
+    margin-top: 5%;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .electrik h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+  .electrik p {
+    display: none;
+  }
+  .electrik h1:hover {
+    transform: scale(1.02);
+    box-shadow: none;
+  }
+  .electrik:hover {
+    box-shadow: none;
   }
 }/*# sourceMappingURL=style.css.map */

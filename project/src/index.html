@@ -11,8 +11,13 @@
 
 <body>
     <header>
-        <nav class="list">
-            <ul>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </div>
+            <ul class="nav-list">
                 <li class="li1"><img src="/project/src/images/Art Gallery.webp" alt=""></li>
                 <li class="li2">Gallery</li>
                 <li class="li3">About Us</li>
@@ -20,10 +25,11 @@
         </nav>
     </header>
     
+
     <div id="TheBestGallery">
         <h1>Our Art Gallery</h1>
     </div>
-    
+
     <div id="gallery">
         <h1>Welcome</h1>
         <button id="btnBlock">Точніше</button>
@@ -36,7 +42,7 @@
             <p>Artist: Maria Ivanova</p>
             <p class="price">Price: $500</p>
             <p>Description: A serene depiction of a sunset, this piece brings warmth and tranquility to any room.</p>
-            <button>Buy Now</button>
+            <button class="callNumberBtn">Buy Now</button>
         </div>
         <div class="card">
             <img src="https://via.placeholder.com/300x200" alt="Картина 2">
@@ -44,7 +50,7 @@
             <p>Artist: John Smith</p>
             <p class="price">Price: $700</p>
             <p>Description: Dive into the beauty of the ocean with this stunning abstract interpretation of waves.</p>
-            <button>Buy Now</button>
+            <button class="callNumberBtn">Buy Now</button>
         </div>
         <div class="card">
             <img src="https://via.placeholder.com/300x200" alt="Картина 3">
@@ -52,35 +58,40 @@
             <p>Artist: Emily Taylor</p>
             <p class="price">Price: $900</p>
             <p>Description: A mystical forest bathed in golden light, perfect for nature lovers.</p>
-            <button>Buy Now</button>
+            <button class="callNumberBtn">Buy Now</button>
         </div>
     </div>
     
+
     <section class="catalog-section">
         <div class="catalog-container">
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 1">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 1">
                 <h3>Abstract Beauty</h3>
                 <p class="myP">A vivid explosion of color and texture that captivates the viewer's imagination.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 2">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 2">
                 <h3>Silent Morning</h3>
                 <p class="myP">An elegant landscape capturing the quiet beauty of early dawn.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 3">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 3">
                 <h3>Whispers of the Wind</h3>
                 <p class="myP">A delicate portrayal of nature’s unseen forces, full of movement and emotion.</p>
             </div>
             <div class="catalog-item">
-                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0" alt="Painting 4">
+                <img src="https://th.bing.com/th/id/R.9954423fd752b07fc1aeba09a48b659c?rik=MRbiUlLiQ6G73g&pid=ImgRaw&r=0"
+                    alt="Painting 4">
                 <h3>Autumn Serenade</h3>
                 <p class="myP">An ode to the vibrant hues and peaceful atmosphere of the fall season.</p>
             </div>
         </div>
     </section>
-    
+
     <div id="plitka">
         <section>
             <ul class="ul-one">
@@ -91,43 +102,50 @@
             <ul class="ul2">
                 <li>
                     <h1>Contemporary Art</h1>
-                    <p class="li-p">Explore the bold and expressive world of contemporary paintings, each piece offering a fresh perspective.</p>
+                    <p class="li-p">Explore the bold and expressive world of contemporary paintings, each piece offering
+                        a fresh perspective.</p>
                     <button class="btn">Shop Now</button>
                     <p></p>
                 </li>
             </ul>
         </section>
     </div>
-    
+
     <div id="elektrik-conteiner">
         <h3>About Our Gallery</h3>
-        <p>At , we believe that art has the power to inspire, transform, and bring joy to every space. Our curated collection represents a diverse range of styles, techniques, and artistic visions.</p>
+        <p>At , we believe that art has the power to inspire, transform, and bring joy to every space. Our curated
+            collection represents a diverse range of styles, techniques, and artistic visions.</p>
         <div class="electrik">
             <h1>Our Mission</h1>
-            <p>We aim to make exceptional art accessible to everyone, whether you're an experienced collector or looking to decorate your home.</p>
-            <img class="myImg" src="https://th.bing.com/th/id/OIP.FA2WwxBfcSjhLZAJjQ5hhwHaEo?rs=1&pid=ImgDetMain" alt="">
+            <p>We aim to make exceptional art accessible to everyone, whether you're an experienced collector or looking
+                to decorate your home.</p>
+            <img class="myImg" src="https://th.bing.com/th/id/OIP.FA2WwxBfcSjhLZAJjQ5hhwHaEo?rs=1&pid=ImgDetMain"
+                alt="">
         </div>
     </div>
-    
+
     <section id="myQuestion">
         <div class="qa">
             <div class="question" onclick="toggleAnswer(1)">How do I purchase a painting?</div>
             <div class="answer" id="answer1">
-                You can browse our collection online and click "Buy Now" to purchase a painting. We offer secure payment options and worldwide shipping.
+                You can browse our collection online and click "Buy Now" to purchase a painting. We offer secure payment
+                options and worldwide shipping.
             </div>
-    
+
             <div class="question" onclick="toggleAnswer(2)">Do you offer custom art commissions?</div>
             <div class="answer" id="answer2">
-                Yes! We work with a variety of artists who are happy to take on custom commissions. Contact us with your idea, and we'll help bring it to life.
+                Yes! We work with a variety of artists who are happy to take on custom commissions. Contact us with your
+                idea, and we'll help bring it to life.
             </div>
-    
+
             <div class="question" onclick="toggleAnswer(3)">How do I care for my painting?</div>
             <div class="answer" id="answer3">
-                We provide detailed care instructions with each painting. Generally, avoid direct sunlight and excessive humidity to keep your artwork in perfect condition.
+                We provide detailed care instructions with each painting. Generally, avoid direct sunlight and excessive
+                humidity to keep your artwork in perfect condition.
             </div>
         </div>
     </section>
-    
+
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal">
             <h1>important information</h1>
@@ -136,18 +154,27 @@
             <button onclick="closeModal()">I understand that</button>
         </div>
     </div>
-    
+
     <div id="art-box">
         <img src="/project/src/images/галлерея.webp" alt="">
         <div class="art-description">
             <h2>Discover Unique Art</h2>
-            <p>Each artwork in our gallery is a one-of-a-kind piece that reflects the artist’s passion and creativity. Browse through our gallery to find art that resonates with your personal style.</p>
+            <p>Each artwork in our gallery is a one-of-a-kind piece that reflects the artist’s passion and creativity.
+                Browse through our gallery to find art that resonates with your personal style.</p>
             <button class="learn-more" id="newBtn">Explore Collection</button>
             <p id="myNewtext"></p>
         </div>
     </div>
-    
-    <footer></footer>
+
+    <footer>
+        <a href="tel:+1234567890" class="call-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+              <path fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l1.2-1.2c.27-.27.67-.36 1.03-.26 1.12.28 2.33.44 3.57.44.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C9.16 22 2 14.84 2 6.5 2 5.95 2.45 5.5 3 5.5h3.5c.55 0 1 .45 1 1 0 1.24.15 2.45.44 3.57.1.36.01.76-.26 1.03l-1.2 1.19z"/>
+            </svg>
+          </a>
+        <h3>Lorem, ipsum.</h3>
+        <p>1234567890</p>
+    </footer>
 </body>
 
 </html>
