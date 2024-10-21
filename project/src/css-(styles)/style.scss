@@ -1,14 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+li {
+	list-style-type: none;
+}
 
 header {
 	width: 100%;
 	background-color: rgba(212, 194, 160, 0.712);
-	height: 150px;
+	height: 170px;
 	nav {
 		margin-left: 5%;
 		margin-right: 5%;
 		padding-top: 1%;
 		ul {
+			.li1{
+				margin-top: 30px;
+				list-style-type: none;
+				font-size: 30px;
+				color: #fff;
+				text-align: center;
+				letter-spacing: 5px;
+				img{
+					width: 100px;
+					border-radius: 50px;
+					height: 100px;
+					transition: all 0.5s;
+				}
+				img:hover{
+					transform: scale(1.5) rotate(360deg);
+				}
+			}
 			display: flex;
 			gap: 25%;
 			li {
@@ -21,7 +42,16 @@ header {
 				letter-spacing: 5px;
 				transition: all 1s;
 			}
-			li:hover {
+			.li2:hover {
+				color: black;
+				background-color: #fff;
+				border-radius: 100px;
+				box-shadow: 0 0 20px rgb(255, 255, 255),
+					0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
+				transform: scale(1.1);
+				padding: 30px;
+			}
+			.li3:hover{
 				color: black;
 				background-color: #fff;
 				border-radius: 100px;
@@ -89,15 +119,15 @@ header {
 	}
 }
 
-#TheBestGallery{
+#TheBestGallery {
 	height: 220px;
 	width: 100%;
 	background-color: #251139;
-	h1{
+	h1 {
 		font-size: 190px;
 		margin-left: 30%;
 		font-weight: 900;
-		background-image: url("https://i.pinimg.com/736x/0c/66/19/0c6619872a2ffaba4bd939d82dd2ce66.jpg");
+		background-image: url('https://i.pinimg.com/736x/0c/66/19/0c6619872a2ffaba4bd939d82dd2ce66.jpg');
 		background-clip: text;
 		color: transparent;
 		background-size: contain;
@@ -176,6 +206,7 @@ header {
 .catalog-section {
 	background-color: rgb(177, 195, 160);
 	padding: 40px 20px;
+	padding-bottom: 100px;
 
 	.catalog-container {
 		display: flex;
@@ -196,12 +227,12 @@ header {
 				margin-bottom: 50px;
 			}
 
-		h3 {
-        position: relative;
-        font-family: "Poppins", sans-serif;
-        color: #f6d8d5;
-        background-image: radial-gradient( #f6d8d5);
-        font-size: 50px;
+			h3 {
+				position: relative;
+				font-family: 'Poppins', sans-serif;
+				color: #f6d8d5;
+				background-image: radial-gradient(#f6d8d5);
+				font-size: 50px;
 			}
 
 			.myP {
@@ -223,12 +254,11 @@ header {
 	}
 }
 
-
 #plitka {
-  padding-top: 5%;
-  padding-bottom: 5%;
-	background: linear-gradient(70deg, rgb(255, 255, 255), rgb(0, 0, 0))
-			no-repeat center/ cover;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: linear-gradient(70deg, rgb(255, 255, 255), rgb(0, 0, 0)) no-repeat
+		center/ cover;
 	width: 100%;
 	section {
 		display: flex;
@@ -236,7 +266,8 @@ header {
 			li {
 				img {
 					padding: 20px;
-					box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+					box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+						rgba(0, 0, 0, 0.22) 0px 15px 12px;
 					margin-left: 15%;
 					width: 100%;
 					height: 500px;
@@ -337,16 +368,27 @@ header {
 	background-color: #434646;
 	object-fit: cover;
 	width: 100%;
-  h3{
-    font-family: "Italiana";
-    padding-top: 200px;
-    text-decoration: underline overline;
-    width: 30%;
-    font-size: 30px;
-    margin-left: 65%;
-    position: absolute;
-    color: #e0e0e0;
-  }
+	h3 {
+		font-family: 'Italiana';
+		padding-top: 200px;
+		text-decoration: underline overline;
+		width: 30%;
+		font-size: 30px;
+		margin-left: 65%;
+		position: absolute;
+		color: #e0e0e0;
+	}
+	p{
+		position: absolute;
+		font-family: 'Italiana';
+		padding-top: 300px;
+		text-decoration: underline overline;
+		width: 30%;
+		font-size: 30px;
+		margin-left: 65%;
+		position: absolute;
+		color: #e0e0e0;
+	}
 	.electrik {
 		margin-left: 10%;
 		border-radius: 70px;
@@ -365,17 +407,19 @@ header {
 			transition: 3s;
 		}
 		p {
+			width: 80%;
 			font-family: serif;
-			font-size: 20px;
-			text-align: center;
+			font-size: 18px;
 			text-transform: uppercase;
-			letter-spacing: 5px;
+			letter-spacing: 2px;
 			background: linear-gradient(135deg, #2c2a2a 0%, #b5a2a2 100%);
 			background-clip: text;
 			-webkit-background-clip: text;
 			color: transparent;
-			margin-top: 50px;
+			margin-top: 10px;
 			border-radius: 10px;
+			position: absolute;
+			margin-left: 10%;
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 		h1 {
@@ -407,100 +451,96 @@ header {
 	}
 }
 
-#myQuestion{
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background: url("https://i.pinimg.com/736x/8c/26/3e/8c263ecfbf5343bbbfc77db6e5f29dba.jpg") no-repeat center/cover;
-  .qa {
-	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Arial', sans-serif;
-	.question {
-		background-color: #1e1e2e;
-		color: #fff;
-		padding: 15px;
-		margin: 10px 0;
-		border-radius: 8px;
-		cursor: pointer;
-		position: relative;
-		overflow: hidden;
-		transition: background-color 0.4s, color 0.4s;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-		text-align: center;
-	  }
-	  .question:hover {
-		background-color: #282a36;
-		color: #50fa7b;
-		box-shadow: 0 4px 25px rgba(80, 250, 123, 0.5);
-		transform: scale(1.05);
-	  }
-	  .question::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 0;
-		height: 100%;
-		background: linear-gradient(90deg, rgba(80, 250, 123, 0.5), transparent);
-		transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
-		z-index: -1;
-	  }
-	  .question:hover::before {
+#myQuestion {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: url('https://i.pinimg.com/736x/8c/26/3e/8c263ecfbf5343bbbfc77db6e5f29dba.jpg')
+		no-repeat center/cover;
+	.qa {
 		width: 100%;
-		left: 0;
-	  }
-	  .question::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 0;
-		height: 0;
-		background: rgba(80, 250, 123, 0.5);
-		border-radius: 50%;
-		transition: width 0.6s ease-in-out, height 0.6s ease-in-out, top 0.6s ease-in-out, left 0.6s ease-in-out;
-		z-index: -1;
-	  }
-	  .question:hover::after {
-		width: 300%;
-		height: 300%;
-		top: -100%;
-		left: -100%;
-	  }
-	  .question:hover::after {
-		width: 300%;
-		height: 300%;
-		top: -100%;
-		left: -100%;
-	  }
-	  .answer {
-		background-color: #f8f8f8;
-		color: #000000;
-		padding: 15px;
-		margin: 10px 0;
-		border-radius: 8px;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-		transform: translateY(-10px);
-		transition: opacity 0.6s, transform 0.6s;
-	  }
-  }
+		max-width: 600px;
+		margin: 0 auto;
+		font-family: 'Arial', sans-serif;
+		.question {
+			background-color: #1e1e2e;
+			color: #fff;
+			padding: 15px;
+			margin: 10px 0;
+			border-radius: 8px;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			transition: background-color 0.4s, color 0.4s;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+		.question:hover {
+			background-color: #282a36;
+			color: #50fa7b;
+			box-shadow: 0 4px 25px rgba(80, 250, 123, 0.5);
+			transform: scale(1.05);
+		}
+		.question::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 0;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(80, 250, 123, 0.5), transparent);
+			transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+			z-index: -1;
+		}
+		.question:hover::before {
+			width: 100%;
+			left: 0;
+		}
+		.question::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			background: rgba(80, 250, 123, 0.5);
+			border-radius: 50%;
+			transition: width 0.6s ease-in-out, height 0.6s ease-in-out,
+				top 0.6s ease-in-out, left 0.6s ease-in-out;
+			z-index: -1;
+		}
+		.question:hover::after {
+			width: 300%;
+			height: 300%;
+			top: -100%;
+			left: -100%;
+		}
+		.answer {
+			background-color: #f8f8f8;
+			color: #000000;
+			padding: 15px;
+			margin: 10px 0;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			transform: translateY(-10px);
+			transition: opacity 0.6s, transform 0.6s;
+		}
+	}
 }
 
-.modal-overlay{
+.modal-overlay {
 	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 1000;
-	.modal{
+	.modal {
 		position: fixed;
 		top: 10%;
 		left: 50%;
-		transform: translate(-50%,50%);
+		transform: translate(-50%, 50%);
 		background-color: white;
 		padding: 20px;
 		width: 100%;
@@ -508,14 +548,14 @@ header {
 		border-radius: 10px;
 		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 		z-index: 1001;
-		h1{
+		h1 {
 			font-size: 30;
 			font-family: monospace;
 			margin-top: 0;
 			font-size: 24px;
 			text-align: center;
 		}
-		h3{
+		h3 {
 			margin-top: 5%;
 			font-size: 20px;
 			font-family: monospace;
@@ -523,29 +563,154 @@ header {
 			font-size: 18px;
 			text-align: center;
 		}
-		p{
+		p {
 			margin-top: 5%;
 			font-family: monospace;
 			text-align: center;
 			font-size: 15px;
 			margin-bottom: 20px;
 		}
-		button{
+		button {
 			font-family: monospace;
 			display: block;
 			width: 100%;
 			padding: 10px;
 			font-size: 20px;
-			background-color: #4CAF50;
+			background-color: #4caf50;
 			transition: all 1s;
 			color: white;
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
 		}
-		button:hover{
+		button:hover {
 			border-radius: 100px;
 			background-color: #00ff0d;
 		}
+	}
+}
+
+footer {
+	position: fixed;
+	height: 100px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	z-index: 1000;
+}
+
+#art-box {
+	padding-top: 5%;
+	background-color: #1e1e2e;
+	padding-bottom: 10%;
+	display: flex;
+	img {
+		border-radius: 50px;
+		margin-top: 2%;
+		margin-left: 10%;
+		height: 400px;
+		width: 400px;
+	}
+}
+
+.art-description {
+	margin-left: 10%;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
+	h2 {
+		font-family: 'Roboto';
+		color: #333;
+		font-size: 24px;
+		margin-bottom: 15px;
+		position: relative;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	p {
+		font-family: 'Roboto';
+		color: #555;
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: 20px;
+	}
+	p:hover {
+		font-size: 18px;
+		font-weight: 900;
+		font-family: 'Italiana';
+	}
+	.learn-more {
+		font-family: 'Italiana';
+		background-color: #007bff;
+		border: none;
+		border-radius: 30px;
+		color: white;
+		padding: 10px 25px;
+		font-size: 14px;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.learn-more:hover {
+		background-color: #0056b3;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+}
+.art-description:hover {
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	transform: translateY(-10px);
+}
+.art-description::before,
+.art-description::after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: rgba(0, 123, 255, 0.1);
+	border-radius: 50%;
+	z-index: -1;
+	transition: all 0.5s ease-in-out;
+}
+.art-description::before {
+	top: -50px;
+	left: -50px;
+}
+.art-description::after {
+	bottom: -50px;
+	right: -50px;
+}
+
+.art-description:hover::before {
+	top: -70px;
+	left: -70px;
+	transform: scale(1.1);
+}
+
+.art-description:hover::after {
+	bottom: -70px;
+	right: -70px;
+	transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }

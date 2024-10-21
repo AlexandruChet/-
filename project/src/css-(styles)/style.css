@@ -1,9 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+li {
+  list-style-type: none;
+}
+
 header {
   width: 100%;
   background-color: rgba(212, 194, 160, 0.712);
-  height: 150px;
+  height: 170px;
 }
 header nav {
   margin-left: 5%;
@@ -13,6 +17,23 @@ header nav {
 header nav ul {
   display: flex;
   gap: 25%;
+}
+header nav ul .li1 {
+  margin-top: 30px;
+  list-style-type: none;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+}
+header nav ul .li1 img {
+  width: 100px;
+  border-radius: 50px;
+  height: 100px;
+  transition: all 0.5s;
+}
+header nav ul .li1 img:hover {
+  transform: scale(1.5) rotate(360deg);
 }
 header nav ul li {
   margin-top: 30px;
@@ -24,7 +45,15 @@ header nav ul li {
   letter-spacing: 5px;
   transition: all 1s;
 }
-header nav ul li:hover {
+header nav ul .li2:hover {
+  color: black;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 40px rgba(249, 252, 255, 0.6), 0 0 60px rgba(171, 198, 226, 0.6);
+  transform: scale(1.1);
+  padding: 30px;
+}
+header nav ul .li3:hover {
   color: black;
   background-color: #fff;
   border-radius: 100px;
@@ -166,6 +195,7 @@ header nav ul li:hover {
 .catalog-section {
   background-color: rgb(177, 195, 160);
   padding: 40px 20px;
+  padding-bottom: 100px;
 }
 .catalog-section .catalog-container {
   display: flex;
@@ -315,6 +345,17 @@ header nav ul li:hover {
   position: absolute;
   color: #e0e0e0;
 }
+#elektrik-conteiner p {
+  position: absolute;
+  font-family: "Italiana";
+  padding-top: 300px;
+  text-decoration: underline overline;
+  width: 30%;
+  font-size: 30px;
+  margin-left: 65%;
+  position: absolute;
+  color: #e0e0e0;
+}
 #elektrik-conteiner .electrik {
   margin-left: 10%;
   border-radius: 70px;
@@ -334,17 +375,19 @@ header nav ul li:hover {
   transition: 3s;
 }
 #elektrik-conteiner .electrik p {
+  width: 80%;
   font-family: serif;
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   background: linear-gradient(135deg, #2c2a2a 0%, #b5a2a2 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-top: 50px;
+  margin-top: 10px;
   border-radius: 10px;
+  position: absolute;
+  margin-left: 10%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #elektrik-conteiner .electrik h1 {
@@ -432,12 +475,6 @@ header nav ul li:hover {
   top: -100%;
   left: -100%;
 }
-#myQuestion .qa .question:hover::after {
-  width: 300%;
-  height: 300%;
-  top: -100%;
-  left: -100%;
-}
 #myQuestion .qa .answer {
   background-color: #f8f8f8;
   color: #000000;
@@ -500,7 +537,7 @@ header nav ul li:hover {
   width: 100%;
   padding: 10px;
   font-size: 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   transition: all 1s;
   color: white;
   border: none;
@@ -510,4 +547,132 @@ header nav ul li:hover {
 .modal-overlay .modal button:hover {
   border-radius: 100px;
   background-color: #00ff0d;
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+#art-box {
+  padding-top: 5%;
+  background-color: #1e1e2e;
+  padding-bottom: 10%;
+  display: flex;
+}
+#art-box img {
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-left: 10%;
+  height: 400px;
+  width: 400px;
+}
+
+.art-description {
+  margin-left: 10%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+.art-description h2 {
+  font-family: "Roboto";
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.art-description p {
+  font-family: "Roboto";
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.art-description p:hover {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Italiana";
+}
+.art-description .learn-more {
+  font-family: "Italiana";
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.art-description .learn-more:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.art-description:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.art-description::before,
+.art-description::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.art-description::before {
+  top: -50px;
+  left: -50px;
+}
+
+.art-description::after {
+  bottom: -50px;
+  right: -50px;
+}
+
+.art-description:hover::before {
+  top: -70px;
+  left: -70px;
+  transform: scale(1.1);
+}
+
+.art-description:hover::after {
+  bottom: -70px;
+  right: -70px;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=style.css.map */

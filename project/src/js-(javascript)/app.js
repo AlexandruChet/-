@@ -30,3 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function closeModal() {
     document.getElementById('modalOverlay').style.display = 'none';
 }
+
+let newBtn = document.getElementById("newBtn");
+let myNewText = document.getElementById("myNewtext");
+
+newBtn.onclick = function () {
+	if (myNewText.textContent === '') {
+		myNewText.textContent =
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur officia maxime excepturi dicta error accusamus totam quo. Eum corporis nulla aspernatur dolorum nisi, natus earum, recusandae illo, tenetur esse tempore?';
+	} else {
+		myNewText.textContent = '';
+	}
+}
