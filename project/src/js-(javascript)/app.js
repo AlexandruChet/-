@@ -51,10 +51,24 @@ burgerMenu.addEventListener('click', () => {
 	navList.classList.toggle('active')
 })
 
-const callBtns = document.querySelectorAll('.callNumberBtn');
+const callBtns = document.querySelectorAll('.callNumberBtn')
 
-callBtns.forEach(btn => {
-	btn.addEventListener('click', function() {
-		window.location.href = 'tel:+1234567890';
-	});
-});
+callBtns.forEach((btn) => {
+	btn.addEventListener('click', function () {
+		window.location.href = 'tel:+1234567890'
+	})
+})
+
+const button = document.getElementById('shopBtn')
+
+button.addEventListener('click', () =>{
+	window.location.href = 'tel:+1234567890'
+
+	button.style.backgroundColor = 'lightblue'
+	document.body.style.color = 'lightblue'
+
+	setTimeout(() => {
+		button.style.backgroundColor = 'white'
+		document.body.style.backgroundColor = 'white'
+	}, 2000);
+})
