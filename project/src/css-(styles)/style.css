@@ -9,30 +9,28 @@ header {
   background-color: rgba(212, 194, 160, 0.712);
   height: 170px;
 }
-
-.burger-menu {
+header nav {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+}
+header nav .burger-menu {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
-.burger-menu .burger-bar {
+header nav .burger-menu .burger-bar {
   width: 25px;
   height: 3px;
   background-color: #fff;
   margin: 4px 0;
   transition: all 0.3s ease;
 }
-
-nav {
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 1%;
-}
-nav ul {
+header nav ul {
   display: flex;
   gap: 25%;
 }
-nav li {
+header nav li {
   margin-top: 30px;
   list-style-type: none;
   font-size: 30px;
@@ -42,7 +40,7 @@ nav li {
   letter-spacing: 5px;
   transition: all 1s;
 }
-nav li:hover {
+header nav li:hover {
   color: black;
   background-color: #fff;
   border-radius: 100px;
@@ -50,7 +48,7 @@ nav li:hover {
   transform: scale(0.8);
   padding: 30px;
 }
-nav .li1 {
+header nav .li1 {
   margin-top: 30px;
   list-style-type: none;
   font-size: 30px;
@@ -58,13 +56,13 @@ nav .li1 {
   text-align: center;
   letter-spacing: 5px;
 }
-nav .li1 img {
+header nav .li1 img {
   width: 100px;
   border-radius: 50px;
   height: 100px;
   transition: all 0.5s;
 }
-nav .li1 img:hover {
+header nav .li1 img:hover {
   transform: scale(1.5) rotate(720deg);
 }
 
@@ -568,7 +566,7 @@ footer {
 }
 footer a {
   height: 100px;
-  margin-left: 30%;
+  margin-left: 35%;
   position: absolute;
   width: 100px;
 }
@@ -704,6 +702,13 @@ footer p {
   }
 }
 @media (max-width: 768px) {
+  footer p {
+    width: 130px;
+  }
+  footer a {
+    margin-left: 40%;
+    margin-top: 2%;
+  }
   header {
     height: auto;
     padding: 15px;
@@ -918,5 +923,59 @@ footer p {
     left: -1px;
     border-top: 5px solid black;
     border-left: 5px solid black;
+  }
+  footer p {
+    width: 130px;
+  }
+  footer a {
+    margin-left: 50%;
+    margin-top: 5%;
+  }
+  #TheBestGallery h1 {
+    margin-left: 5%;
+    font-size: 100px;
+  }
+}
+@media (max-width: 376px) {
+  #gallery h1 {
+    font-size: 50px;
+  }
+  #gallery button {
+    margin-left: 25%;
+  }
+  #gallery p {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #elektrik-conteiner {
+    height: 900px;
+  }
+  #elektrik-conteiner h3 {
+    display: none;
+  }
+  #elektrik-conteiner p {
+    margin-top: 100%;
+  }
+  #elektrik-conteiner .electrik img {
+    width: 80%;
+    height: 300px;
+  }
+  #TheBestGallery h1 {
+    margin-left: 5%;
+    font-size: 80px;
+  }
+  footer {
+    height: 150px;
+  }
+  footer p {
+    width: 130px;
+  }
+  footer a {
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+  #art-box {
+    padding-bottom: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
