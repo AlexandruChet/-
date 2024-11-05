@@ -52,3 +52,5 @@ Footer with a callback phone number and icon for customer inquiries.
 
 ### Dynamic Content
 - JavaScript controls for modal overlay and FAQ answers using IDs like `#answer1`, `#answer2`, etc.
+
+### Screenshots
